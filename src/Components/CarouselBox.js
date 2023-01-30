@@ -8,9 +8,9 @@ export default class CarouselBox extends Component {
             <Carousel>
                 <CarouselItem>
                     <img 
-                        className='d-block w-100%'
-                        height= '600px'
-                        weight = '600px'
+                        className='d-block mr-auto w-50% round'
+                        height= '500px'
+                        weight = '500px'
                         src={bl1}
                         alt='Bleach'
                     />
@@ -21,9 +21,9 @@ export default class CarouselBox extends Component {
                 </CarouselItem>
                 <CarouselItem>
                     <img 
-                        className='d-block w-100%'
-                        height= '600px'
-                        weight = '600px'
+                        className='d-block w-50%'
+                        height= '500px'
+                        weight = '500px'
                         src={bl2}
                         alt='Bleach'
                     />
@@ -34,9 +34,9 @@ export default class CarouselBox extends Component {
                 </CarouselItem>
                 <CarouselItem>
                     <img 
-                        className='d-block w-100%'
-                        height= '1000px'
-                        weight = '1000px'
+                        className='d-block w-50%'
+                        height= '500px'
+                        weight = '500px'
                         src={bl1}
                         alt='Bleach'
                     />

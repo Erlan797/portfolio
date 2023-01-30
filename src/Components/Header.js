@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import { Container, FormControl, Navbar, NavLink, Nav, Form, Button} from 'react-bootstrap'
+import { Container, Navbar, NavLink, Nav, Form, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './my_image.jpeg'
 import Home from '../Pages/Home.js'
-import About from '../Pages/About.js'
+import MyProjects from '../Pages/MyProjects.js'
 import Contacs from '../Pages/Contacs.js'
 import Blog from '../Pages/Blog'
 import './Header.css'
+import Footer from './Footer';
 export default class Header extends Component {
     render() {
         return (
@@ -28,12 +29,12 @@ export default class Header extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="mr-auto">
                                 <NavLink href="/">Home</NavLink>
-                                <NavLink href="/about">About me</NavLink>
+                                <NavLink href="/about">My Projects</NavLink>
                                 <NavLink href="/contacs">Contacs</NavLink>
-                                <NavLink href="/blog">Blog</NavLink>
+                                <NavLink href="/blog">Some info</NavLink>
                             </Nav>
-                            <Form inline = 'true'>
-                                <FormControl
+                            <Form inline>
+                                <Form.Control
                                     type='text'
                                     placeholder='Search'
                                     className='mr-sm-2'
@@ -46,11 +47,12 @@ export default class Header extends Component {
                 <Router>
                         <Routes>
                             <Route exact path="/" element={<Home />} />
-                            <Route exact path="/about" element={<About />} />
+                            <Route exact path="/about" element={<MyProjects />} />
                             <Route exact path="/contacs" element={<Contacs />} />
                             <Route exact path="/blog" element={<Blog />} />
                         </Routes>
                 </Router>
+                <Footer />
             </>
         )
     }
