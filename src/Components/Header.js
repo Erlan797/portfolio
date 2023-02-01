@@ -33,7 +33,7 @@ export default class Header extends Component {
                                 <NavLink href="/contacs">Contacs</NavLink>
                                 <NavLink href="/blog">Some info</NavLink>
                             </Nav>
-                            <Form inline className='m-2 float-right'>
+                            <Form inline='true' className='m-2 float-right'>
                                 <Form.Control
                                     type='text'
                                     placeholder='Search'
