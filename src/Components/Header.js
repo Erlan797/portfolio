@@ -29,15 +29,15 @@ export default class Header extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="mr-auto">
                                 <NavLink href="/">Home</NavLink>
-                                <NavLink href="/about">My Projects</NavLink>
+                                <NavLink href="/projects">My Projects</NavLink>
                                 <NavLink href="/contacs">Contacs</NavLink>
                                 <NavLink href="/blog">Some info</NavLink>
                             </Nav>
-                            <Form inline>
+                            <Form inline className='m-2 float-right'>
                                 <Form.Control
                                     type='text'
                                     placeholder='Search'
-                                    className='mr-sm-2'
+                                    className='mr-sm-2 '
                                 />
                             </Form>
                             <Button variant='outline-info'>Search</Button>
@@ -47,7 +47,7 @@ export default class Header extends Component {
                 <Router>
                         <Routes>
                             <Route exact path="/" element={<Home />} />
-                            <Route exact path="/about" element={<MyProjects />} />
+                            <Route exact path="/projects" element={<MyProjects />} />
                             <Route exact path="/contacs" element={<Contacs />} />
                             <Route exact path="/blog" element={<Blog />} />
                         </Routes>
