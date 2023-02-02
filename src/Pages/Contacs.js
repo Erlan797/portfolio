@@ -5,7 +5,7 @@ export default class  Contacs extends Component {
   render() {
     return (
       <Container style={{width:'500px'}}>
-        <h1 className='text-center'>Concact me</h1>
+        <h1 className='text-center'>Contact me</h1>
         <Form>
             <FormGroup controlId="formBasicEmail">
                 <FormLabel>
@@ -13,12 +13,12 @@ export default class  Contacs extends Component {
                 </FormLabel>
                 <FormControl type='email' placeholder='Enter email' />
                     <FormText>
-                        I am new frontend developer
+                        
                     </FormText>
             </FormGroup>
             <FormGroup controlId='formBasicPassword'>
                     <FormLabel>Example textarea</FormLabel>
-                    <FormControl as='textarea' rows="3"></FormControl>
+                    <FormControl as='textarea' rows="3" placeholder='Here...'></FormControl>
             </FormGroup>
             <FormGroup controlId='formBasicCheckbox'>
                     <FormCheck type='checkbox' label='Check me out'></FormCheck>

@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-import { SendOutlined  } from '@ant-design/icons';
+import { InstagramOutlined  } from '@ant-design/icons';
+import { Container } from 'react-bootstrap';
 export default class Footer extends Component {
   render() {
     return (
-      <footer>
+      <Container>
+      <footer className='palette'>
             <h1 className=''>All rights defended</h1>
-            <SendOutlined style={{color:'blue', fontSize:'45px'}}/>
-      </footer>
+            <a href='instagram.com'><InstagramOutlined style={{color:"purple", fontSize:'30px' }}/></a>
+      </footer> 
+      </Container>
     )
   }
 }
