@@ -5,49 +5,50 @@ export default function Result(props) {
     
     let [userChoice, setUserChoice] = useState("");
     let [coumputerChoice,setComputerChoice] = useState(Math.floor(Math.random() * 3) +1) ;
+    const setRandomComputerChoice = () => {
+        setComputerChoice (Math.floor(Math.random() * 3) +1);}
     const handlerClickRock = () => {
-        setUserChoice(userChoice = 'rock')
-        setRandomComputerChoice()
+        setUserChoice(userChoice = 'rock');
+        setRandomComputerChoice();
     }
     const handlerClickPaper = () => {
-        setUserChoice(userChoice = 'paper')
-        setRandomComputerChoice()
+        setUserChoice(userChoice = 'paper');
+        setRandomComputerChoice();
     }
     const handlerClickScissors = () => {
-        setUserChoice(userChoice = 'scissors')
-        setRandomComputerChoice()
+        setUserChoice(userChoice = 'scissors');
+        setRandomComputerChoice();
     }
-    const setRandomComputerChoice = () => {
-        setComputerChoice (Math.floor(Math.random() * 3) +1)}
-    if (coumputerChoice === 1){
-         coumputerChoice ='rock'}
-    else if (coumputerChoice === 2){
-        coumputerChoice ='scissors'}
-
-    else if (coumputerChoice === 3){coumputerChoice = 'paper'}
     
-    setRandomComputerChoice()
+    if (coumputerChoice === 1){
+         coumputerChoice ='rock';}
+    else if (coumputerChoice === 2){
+        coumputerChoice ='scissors';}
+
+    else if (coumputerChoice === 3){coumputerChoice = 'paper';}
+    
+    setRandomComputerChoice();
     let [resultGame] = useState('');
     if (coumputerChoice === userChoice) {
-        resultGame = "Draw!"
+        resultGame = "Draw!";
     }
     else if (coumputerChoice === 'rock' && userChoice ==='scissors') {
-        resultGame = "You lost!"
+        resultGame = "You lost!";
     }
     else if (coumputerChoice === 'rock' && userChoice === 'paper') {
-        resultGame = "You win!"
+        resultGame = "You win!";
     }
     else if (coumputerChoice === 'scissors' && userChoice === 'paper') {
-        resultGame = "You lost!"
+        resultGame = "You lost!";
     }
     else if (coumputerChoice === 'scissors' && userChoice ==='rock') {
-        resultGame = "You win!"
+        resultGame = "You win!";
     }
     else if (coumputerChoice === 'paper' && userChoice === 'rock') {
-        resultGame = "You lost!"
+        resultGame = "You lost!";
     }
     else if (coumputerChoice === 'paper' && userChoice === 'scissors') {
-        resultGame = "You win!"
+        resultGame = "You win!";
     }
 
     return (
