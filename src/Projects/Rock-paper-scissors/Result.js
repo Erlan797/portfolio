@@ -4,26 +4,30 @@ import ComputerChoice from './ComputerChoice';
 export default function Result(props) {
     
     let [userChoice, setUserChoice] = useState("");
-    let [coumputerChoice] = useState(Math.floor(Math.random() * 3) +1) ;
+    let [coumputerChoice,setComputerChoice] = useState(Math.floor(Math.random() * 3) +1) ;
     const handlerClickRock = () => {
         setUserChoice(userChoice = 'rock')
+        setRandomComputerChoice()
     }
     const handlerClickPaper = () => {
         setUserChoice(userChoice = 'paper')
+        setRandomComputerChoice()
     }
     const handlerClickScissors = () => {
         setUserChoice(userChoice = 'scissors')
+        setRandomComputerChoice()
     }
-    
-    
+    const setRandomComputerChoice = () => {
+        setComputerChoice (Math.floor(Math.random() * 3) +1)}
     if (coumputerChoice === 1){
-        coumputerChoice ='rock'}
+         coumputerChoice ='rock'}
     else if (coumputerChoice === 2){
         coumputerChoice ='scissors'}
 
     else if (coumputerChoice === 3){coumputerChoice = 'paper'}
     
-    let resultGame = useState('');
+    setRandomComputerChoice()
+    let [resultGame] = useState('');
     if (coumputerChoice === userChoice) {
         resultGame = "Draw!"
     }
