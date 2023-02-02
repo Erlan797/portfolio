@@ -3,14 +3,8 @@ import Button from './Button';
 import ComputerChoice from './ComputerChoice';
 export default function Result(props) {
     
-    let [coumputerChoice] = useState(Math.floor(Math.random() * 3) +1) ;
-    if (coumputerChoice === 1){
-        coumputerChoice ='rock'}
-    else if (coumputerChoice === 2){
-        coumputerChoice ='scissors'}
-
-    else if (coumputerChoice === 3){coumputerChoice = 'paper'}
     let [userChoice, setUserChoice] = useState("");
+    let [coumputerChoice] = useState(Math.floor(Math.random() * 3) +1) ;
     const handlerClickRock = () => {
         setUserChoice(userChoice = 'rock')
     }
@@ -21,26 +15,34 @@ export default function Result(props) {
         setUserChoice(userChoice = 'scissors')
     }
     
+    
+    if (coumputerChoice === 1){
+        coumputerChoice ='rock'}
+    else if (coumputerChoice === 2){
+        coumputerChoice ='scissors'}
+
+    else if (coumputerChoice === 3){coumputerChoice = 'paper'}
+    
     let resultGame = useState('');
-    if (coumputerChoice == userChoice) {
+    if (coumputerChoice === userChoice) {
         resultGame = "Draw!"
     }
-    else if (coumputerChoice == 'rock' && userChoice =='scissors') {
+    else if (coumputerChoice === 'rock' && userChoice ==='scissors') {
         resultGame = "You lost!"
     }
-    else if (coumputerChoice == 'rock' && userChoice == 'paper') {
+    else if (coumputerChoice === 'rock' && userChoice === 'paper') {
         resultGame = "You win!"
     }
-    else if (coumputerChoice == 'scissors' && userChoice == 'paper') {
+    else if (coumputerChoice === 'scissors' && userChoice === 'paper') {
         resultGame = "You lost!"
     }
-    else if (coumputerChoice == 'scissors' && userChoice =='rock') {
+    else if (coumputerChoice === 'scissors' && userChoice ==='rock') {
         resultGame = "You win!"
     }
-    else if (coumputerChoice == 'paper' && userChoice == 'rock') {
+    else if (coumputerChoice === 'paper' && userChoice === 'rock') {
         resultGame = "You lost!"
     }
-    else if (coumputerChoice == 'paper' && userChoice == 'scissors') {
+    else if (coumputerChoice === 'paper' && userChoice === 'scissors') {
         resultGame = "You win!"
     }
 
