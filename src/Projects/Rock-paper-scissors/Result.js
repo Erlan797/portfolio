@@ -27,7 +27,7 @@ export default function Result(props) {
 
     else if (coumputerChoice === 3){coumputerChoice = 'paper';}
     
-    setRandomComputerChoice();
+
     let [resultGame] = useState('');
     if (coumputerChoice === userChoice) {
         resultGame = "Draw!";
