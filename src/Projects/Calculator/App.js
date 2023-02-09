@@ -48,7 +48,7 @@ export default function Calculator() {
         <Buttons name='0' element='0' onClick={handleClick} />
         <Buttons name='.' element='.' onClick={handleClick} />
         <Buttons name='/' element='/' onClick={handleClick} />
-        <Buttons name='=' element='=' color='warning' onClick={equal} />
+        <Buttons name='=' element='=' color='info' onClick={equal} />
       </div>
       <h1 id='name'>Made by Amanbekov Erlan</h1>
     </>

@@ -10,11 +10,11 @@
     margin: auto;
 }
 .nums{
-    margin:auto;
+    margin-left: 7px;
     text-align: right;
     width: 100%;
     background-color: #413e3e;
-    color:white
+    color:black
 }
 div .main-title{
     margin: auto 43px;
