@@ -4,7 +4,7 @@ import ComputerChoice from './ComputerChoice';
 export default function Result(props) {
     
     let [userChoice, setUserChoice] = useState("");
-    let [coumputerChoice,setComputerChoice] = useState(Math.floor(Math.random() * 3) +1) ;
+    let [coumputerChoice,setComputerChoice] = useState('') ;
     const setRandomComputerChoice = () => {
         setComputerChoice (Math.floor(Math.random() * 3) +1);}
     const handlerClickRock = () => {

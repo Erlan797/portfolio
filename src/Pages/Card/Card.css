@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Kanit&family=Montserrat:wght@700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Crimson+Text:ital,wght@1,600&family=Kanit&family=Montserrat:wght@700&family=Poppins:wght@500&display=swap');
+#kaguya{
+    background: #85dcb8;
+}
+#title{
+    color: #913939;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color:none;
+    background-color:none;
+}
